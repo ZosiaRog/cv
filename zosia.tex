@@ -129,22 +129,35 @@ Coordinated temporary consular office in Gdansk during 2012 UEFA European Champi
 %	CERTIFIACTES SECTION
 %----------------------------------------------------------------------------------------
 
-\section{recommendations}
-\emph{Zofia is a bright and well-organized individual with a creative approach to problem solving.}
-\begin{flushright}
-	Mark MacRae, Senior Manager, Deloitte
-\end{flushright}
 
-\emph{I'd like to emphasize Zofia's extraordinary engagement, teamwork, and responsibility. She's always curious and eager to learn. Her empathetic and open personality contributes to a fantastic atmosphere at work.}
-\begin{flushright}
-	Francisco Fernandez Fabregas, Ambassador of Spain
-\end{flushright}
+\definecolor{fillfooter}{HTML}{09669F}
 
-
-\emph{todo}
-\begin{flushright}
-Paolo dei Pra, Associate Professor, University of Padova
-\end{flushright}
+  \begin{tikzpicture}[remember picture,overlay]
+    \node [rectangle, fill=fillfooter, anchor=south, minimum width=\paperwidth, minimum height=6cm, opacity=0.1] (box) at (current page.south){};
+    \node [anchor=center,text width=19cm, yshift = 1.7cm] (quote1) at (box) {%
+      \fontsize{12pt}{20pt}\color{header}%
+      \emph{Zofia is a bright and well-organized individual with a creative approach to problem solving.}\\
+	\begin{flushright}
+		Mark MacRae, Senior Manager, Deloitte
+	\end{flushright}
+	{\vspace{0.2cm}}
+    };
+    \node [anchor=north, text width=19cm] (quote2) at (quote1.south) {%
+      \fontsize{12pt}{20pt}\color{header}%
+      \emph{I'd like to emphasize Zofia's extraordinary engagement, teamwork, and responsibility. She's always curious and eager to learn. Her empathetic and open personality contributes to a fantastic atmosphere at work.}\\
+	\begin{flushright}
+		Francisco Fernandez Fabregas, Ambassador of Spain
+	\end{flushright}
+	{\vspace{0.2cm}}
+    };
+    \node [anchor=north, text width=19cm] at (quote2.south) {%
+      \fontsize{12pt}{20pt}\color{header}%
+      \emph{I'd like to emphasize Zofia's extraordinary engagement, teamwork, and responsibility. She's always curious and eager to learn. Her empathetic and open personality contributes to a fantastic atmosphere at work.}\\
+	\begin{flushright}
+		Paolo dei Pra, Associate Professor, University of Padova
+	\end{flushright}
+    };
+  \end{tikzpicture}
 
 %
 
