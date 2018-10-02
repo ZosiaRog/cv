@@ -130,8 +130,8 @@ Coordinated a temporary consular office in Gdansk during 2012 UEFA European Cham
 %----------------------------------------------------------------------------------------
 
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=white, anchor=south, minimum width=\paperwidth, minimum height=4.8cm, opacity=0.1] (box) at (current page.south){};
-    \node [anchor=center,text width=19cm, yshift = 1.7cm] (quote1) at (box) {%
+    \node [rectangle, fill=white, anchor=south, minimum width=\paperwidth, minimum height=5.2cm, opacity=0.1] (box) at (current page.south){};
+    \node [anchor=center,text width=19cm, yshift = 2cm] (quote1) at (box) {%
       \fontsize{12pt}{20pt}\color{header}%
       \emph{Zofia is a bright and well-organized individual with a creative approach to problem solving.}\\
 	{\vspace{0.2cm}}
@@ -148,9 +148,11 @@ Coordinated a temporary consular office in Gdansk during 2012 UEFA European Cham
 		Francisco Fernandez Fabregas, Ambassador of Spain to Poland
 	\end{flushright}
     };
+    \node [yshift=-0.7cm, anchor=north, text width=19cm] (footnote) at (quote2.south) {%
+      \fontsize{12pt}{20pt}\color{header}%
+      {\scriptsize \fontspec[Color=lightgray]{Lato Regular}I agree for my personal data to be  processed by (company name) for the purpose of recruitment for the position I am applying for.}
+    };
   \end{tikzpicture}
-
-%0A6CA8
 
 
 \end{document}
